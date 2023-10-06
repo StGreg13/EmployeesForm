@@ -47,8 +47,10 @@ class EmployeesAddForm extends Component {
                            className="form-control new-post-label"
                            placeholder="З/П в $?" />
 
-                    <button type="submit"
-                            className="btn btn-outline-light">Добавить</button>
+                    <button
+                        disabled={ !name || !salary }
+                        type="submit"
+                        className="btn btn-outline-light">Добавить</button>
                 </form>
             </div>
         )
